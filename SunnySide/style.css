@@ -1,0 +1,658 @@
+/* - Soft red: hsl(7, 99%, 70%)
+- Yellow: hsl(51, 100%, 49%)
+- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+- Dark blue (photography text): hsl(198, 62%, 26%)
+- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+### Neutral
+- Very dark desaturated blue: hsl(212, 27%, 19%)
+- Very dark grayish blue: hsl(213, 9%, 39%)
+- Dark grayish blue: hsl(232, 10%, 55%)
+- Grayish blue: hsl(210, 4%, 67%)
+- White: hsl(0, 0%, 100%) */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Barlow', 'Fraunces', sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    background-image: url('images/mobile/image-header.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 78%;
+    padding: 4rem 2rem;
+
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+.logo {
+    height: 100%;
+}
+
+
+/* .navigation {} */
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    text-align: center;
+    position: relative;
+    top: 9%;
+    left: -130%;
+    background-color: hsl(0, 0%, 100%);
+    height: 35rem;
+    /*NEW */
+    align-items: center;
+    padding: 9rem 0rem 3rem 0rem;
+    /*NEW*/
+    width: 275%;
+    color: hsl(232, 10%, 55%);
+    z-index: 99;
+    clip-path: polygon(0 15%, 90% 15%, 100% 3%, 100% 100%, 0% 100%);
+    /* transform: translateX(200%); */
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.nav-items {
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 3.5rem;
+    /*NEW*/
+}
+
+.contact-btn {
+    padding: 1.5rem 2.5rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: hsl(51, 100%, 49%);
+    font-family: 'Fraunces';
+    text-transform: uppercase;
+}
+
+.hamburger {
+    height: 100%;
+    cursor: pointer;
+}
+
+.heading-wrapper {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    /* border: 2px solid black; */
+}
+
+.header-heading {
+    text-align: center;
+    font-family: 'Fraunces';
+    color: white;
+
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: .7rem;
+}
+
+
+.arrow-down {
+    align-self: center;
+}
+
+/*-----------SECTION 2--------*/
+.main-container {
+    width: 100%;
+
+}
+
+.card-wrapper-brand {
+    /* border: 2px solid black; */
+    /* height: 70rem; */
+    padding-bottom: 2rem;
+}
+
+.egg-img {
+    width: 100%;
+
+}
+
+.brand-item {
+    text-align: center;
+    padding: 5rem 2rem;
+
+}
+
+.brand-heading {
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', sans-serif;
+    width: 90%;
+    margin: 0 auto 4rem auto;
+}
+
+.brand-subheading {
+    color: hsl(232, 10%, 55%);
+    margin-bottom: 4rem;
+    line-height: 3rem;
+}
+
+.brand-btn {
+    font-size: 1.4rem;
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    text-decoration: .5rem underline hsl(51, 97%, 66%);
+}
+
+/*--------- CUP CARD------- */
+
+.card-wrapper-audience {
+    /* border: 2px solid black; */
+    padding-bottom: 2rem;
+
+
+}
+
+.cup-img {
+    width: 100%;
+}
+
+.audience-item {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.audience-heading {
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', sans-serif;
+    width: 80%;
+    margin: 0 auto 4rem auto;
+}
+
+.audience-subheading {
+    color: hsl(232, 10%, 55%);
+    margin-bottom: 4rem;
+    line-height: 3rem;
+}
+
+.audience-btn {
+    font-size: 1.4rem;
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    text-decoration: .5rem underline hsl(350, 100%, 88%);
+}
+
+/*------GRAPHIC + PHOTOGRAPHY CARD------ */
+
+.card-wrapper-fruits {
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.cherry-container {
+    background-size: 100%;
+    width: 100%;
+    height: 61%;
+    padding-bottom: 5rem;
+    /* height: 70rem; */
+    background-repeat: no-repeat;
+    background-image: url('images/mobile/image-graphic-design.jpg');
+}
+
+.cherry-flex {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cherry-heading {
+    margin-top: 40rem;
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(167, 40%, 24%);
+    margin-bottom: 2rem;
+
+
+}
+
+.cherry-subheading {
+    color: hsl(167, 40%, 24%);
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0rem 2rem;
+}
+
+
+
+
+.orange-container {
+    /* border: 2px solid black; */
+    background-image: url('images/mobile/image-photography.jpg');
+    background-size: 100%;
+    height: 55rem;
+
+    /* width: 100%; */
+}
+
+.orange-flex {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 38rem;
+}
+
+
+.orange-heading {
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(198, 62%, 26%);
+    margin-bottom: 2rem;
+}
+
+.orange-subheading {
+    color: hsl(198, 62%, 26%);
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+
+/* ------- TESTIMONIALS SECTION ------  */
+
+/* .client-test-wrapper {
+    
+
+} */
+
+.client-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fraunces', sans-serif;
+    letter-spacing: .5rem;
+    color: hsl(232, 10%, 55%);
+    margin-bottom: 2rem;
+}
+
+/* .client-wrapper {
+    border: 2px solid black;
+} */
+
+.client-card {
+    margin: 5rem 0;
+    width: 100%;
+    display: grid;
+    justify-items: center
+        /* border: 2px solid black; */
+
+}
+
+.client-img {
+    border-radius: 50%;
+    width: 6rem;
+}
+
+.client-subheading {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: hsl(232, 10%, 55%);
+}
+
+.client-name {
+    font-family: 'Fraunces', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.client-job {
+    color: hsl(210, 4%, 67%);
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+
+/* ------ GALLERY SECTION ------ */
+
+.gallery-wrapper {
+    font-size: 0;
+    letter-spacing: -1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.gallery-img {
+    width: 50%;
+    height: 50%;
+}
+
+/* ------ FOOTER SECTION ------- */
+
+.footer-wrapper {
+    /* width: 100%; */
+    height: 70%;
+    background-color: hsl(168, 69%, 69%);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    margin-top: 6rem;
+    align-self: center;
+}
+
+
+.footer-menu {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+}
+
+.footer-links {
+    list-style: none;
+    color: hsl(168, 34%, 41%);
+}
+
+.icon-wrapper {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.attribution {
+    margin-top: 5rem;
+}
+
+/* ||------------ MEDIA QUERIES----------------|| */
+
+@media only screen and (min-width: 49rem) {
+    .container {
+        background-image: url('images/desktop/image-header.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        padding: 4rem 2rem;
+    }
+
+
+
+    .nav-menu {
+        /* display: flex;
+        gap: 3rem; */
+        display: flex;
+        flex-direction: row;
+        gap: unset;
+        text-align: unset;
+        position: static;
+        background-color: unset;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        color: hsl(0, 0%, 100%);
+        z-index: unset;
+        clip-path: unset;
+        /* transform: translateX(200%); */
+        display: block;
+        height: unset;
+    }
+
+    .nav-items {
+        margin-left: 4rem;
+        cursor: pointer;
+        list-style: none;
+        display: inline-block;
+    }
+
+    .contact-btn {
+        padding: 1.5rem 2.5rem;
+        border-radius: 3rem;
+        border: none;
+        background-color: hsl(0, 0%, 100%);
+        font-family: 'Fraunces';
+        text-transform: uppercase;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+
+    .contact-btn:hover {
+        background-color: hsla(0, 0%, 100%, 0.699);
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .heading-wrapper {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    /* MAIN SECTION  */
+    .main-container {
+        width: 100%;
+
+    }
+
+    .card-wrapper-brand {
+        /* border: 2px solid black; */
+        /* height: 70rem; */
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .egg-img {
+        width: 50%;
+    }
+
+    .brand-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        padding: 5rem 9rem;
+    }
+
+    .brand-heading {
+        color: hsl(212, 27%, 19%);
+        font-family: 'Fraunces', sans-serif;
+        width: 58%;
+        margin: 0 auto 4rem 0;
+        text-align: start;
+        /* border: 2px solid black; */
+    }
+
+    /* CUP SECTION */
+
+    .card-wrapper-audience {
+        /* border: 2px solid black; */
+        padding-bottom: 0;
+        display: flex;
+    }
+
+    .cup-img {
+        width: 50%;
+    }
+
+    .audience-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        padding: 5rem 9rem;
+    }
+
+    .audience-heading {
+        color: hsl(212, 27%, 19%);
+        font-family: 'Fraunces', sans-serif;
+        width: 80%;
+        margin: 0 auto 4rem 0;
+    }
+
+    /* GRAPHIC DESIGN + PHOTO */
+
+    .card-wrapper-fruits {
+        /* border: 2px solid black; */
+        height: 100%;
+        width: 100%;
+        padding-bottom: 0rem;
+        display: flex;
+    }
+
+    .cherry-container {
+        background-size: 100%;
+        width: 50%;
+        height: 55rem;
+        padding-bottom: 0rem;
+        /* height: 70rem; */
+        background-repeat: no-repeat;
+        background-image: url('images/desktop/image-graphic-design.jpg');
+    }
+
+    .cherry-flex {
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 36rem;
+
+    }
+
+    .cherry-heading {
+        margin-top: 0rem;
+        font-family: 'Fraunces', sans-serif;
+        color: hsl(167, 40%, 24%);
+        margin-bottom: 2rem;
+    }
+
+    .cherry-subheading {
+        color: hsl(167, 40%, 24%);
+        line-height: 2.5rem;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 0rem 2rem;
+        width: 65%;
+    }
+
+
+
+
+    .orange-container {
+        /* border: 2px solid black; */
+        background-image: url('images/desktop/image-photography.jpg');
+        background-size: 100%;
+        height: 55rem;
+        width: 50%;
+        background-repeat: no-repeat;
+        /* width: 100%; */
+    }
+
+    .orange-flex {
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 36.5rem;
+    }
+
+
+    .orange-heading {
+        font-family: 'Fraunces', sans-serif;
+        color: hsl(198, 62%, 26%);
+        margin-bottom: 2rem;
+    }
+
+    .orange-subheading {
+        color: hsl(198, 62%, 26%);
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 2rem;
+        width: 43%;
+    }
+
+    /* CLIENT TESTIMONIALS */
+
+    .client-test-wrapper {
+        /* border: 2px solid black; */
+        height: 60rem;
+    }
+
+    .client-heading {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Fraunces', sans-serif;
+        letter-spacing: .5rem;
+        color: hsl(232, 10%, 55%);
+        margin-bottom: 5rem;
+        padding-top: 10rem;
+    }
+
+    .client-wrapper {
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .client-img {
+        border-radius: 50%;
+        width: 8rem;
+    }
+
+    /* ------ GALLERY SECTION ------ */
+
+    .gallery-wrapper {
+        font-size: 0;
+        letter-spacing: -1px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+    }
+
+    .gallery-img {
+        width: 70%;
+        height: 50%;
+    }
+}
